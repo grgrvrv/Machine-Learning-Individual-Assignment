@@ -10,14 +10,21 @@ class GameRenderer:
         self.screen = screen
 
         s = config.CELL_SIZE / 60
+
+        def get_font(size, bold=False):
+            f = pygame.font.Font(None, size)
+            if bold:
+                f.set_bold(True)
+            return f
+
         self.fonts = {
-            "small": pygame.font.SysFont("Arial", int(14 * s)),
-            "norm": pygame.font.SysFont("Arial", int(18 * s)),
-            "mid": pygame.font.SysFont("Arial", int(22 * s)),
-            "big": pygame.font.SysFont("Arial", int(26 * s), bold=True),
-            "title": pygame.font.SysFont("Arial", int(42 * s), bold=True),
-            "huge": pygame.font.SysFont("Arial", int(60 * s), bold=True),
-            "price": pygame.font.SysFont("Arial", int(20 * s), bold=True),
+            "small": get_font(int(14 * s)),
+            "norm": get_font(int(18 * s)),
+            "mid": get_font(int(22 * s)),
+            "big": get_font(int(26 * s), bold=True),
+            "title": get_font(int(42 * s), bold=True),
+            "huge": get_font(int(60 * s), bold=True),
+            "price": get_font(int(20 * s), bold=True),
         }
 
         self.ui = UIRenderer(screen, self.fonts)
