@@ -45,16 +45,16 @@ LEVEL_SETTINGS = {
 
 # --- 10 Enemy Types ---
 ENEMY_TYPES = {
-    1: {"hp": 50, "reward": 15, "dmg": 10, "color": (200, 200, 200)},
-    2: {"hp": 150, "reward": 25, "dmg": 20, "color": (100, 200, 255)},
-    3: {"hp": 300, "reward": 40, "dmg": 40, "color": (100, 255, 100)},
-    4: {"hp": 700, "reward": 60, "dmg": 60, "color": (0, 150, 0)},
+    1: {"hp": 60, "reward": 15, "dmg": 10, "color": (200, 200, 200)},
+    2: {"hp": 130, "reward": 25, "dmg": 20, "color": (100, 200, 255)},
+    3: {"hp": 320, "reward": 40, "dmg": 40, "color": (100, 255, 100)},
+    4: {"hp": 720, "reward": 60, "dmg": 60, "color": (0, 150, 0)},
     5: {"hp": 1500, "reward": 100, "dmg": 100, "color": (255, 255, 100)},
     6: {"hp": 3200, "reward": 200, "dmg": 150, "color": (255, 165, 0)},
-    7: {"hp": 7100, "reward": 400, "dmg": 250, "color": (255, 100, 100)},
-    8: {"hp": 16000, "reward": 800, "dmg": 400, "color": (200, 0, 0)},
-    9: {"hp": 36000, "reward": 1500, "dmg": 800, "color": (150, 0, 150)},
-    10: {"hp": 120000, "reward": 5000, "dmg": 9999, "color": (0, 0, 0)},
+    7: {"hp": 7200, "reward": 400, "dmg": 250, "color": (255, 100, 100)},
+    8: {"hp": 12000, "reward": 800, "dmg": 400, "color": (200, 0, 0)},
+    9: {"hp": 32000, "reward": 1500, "dmg": 800, "color": (150, 0, 150)},
+    10: {"hp": 150000, "reward": 5000, "dmg": 9999, "color": (0, 0, 0)},
 }
 
 # --- Dual Weapon Balance System ---
